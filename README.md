@@ -5,9 +5,26 @@ This is maintained using the subtree git command, that way Unity can be included
 
 ## How to use this fork
 
-Simply include it as a submodule into a project, 
+Simply include it as a submodule into a project:
+
+```
+git submodule add https://github.com/trinamic-ab/Unity.git test/
+```
+When cloning the project that includes this submodule be sure to use the following command :
+
+```
+git clone --recurse-submodules <git@github.com:...>
+```
+
+Otherwise the following command will init and update all submodules :
+
+```
+git submodule update --init --recursive
+```
 
 ## How to update this repo
+
+Updating the repo takes a long time due to having to rebuild the subtree, but it should only be done in case of important updates. In the case of Unity, the current version is proven and has seen no major changes in a long time, so it should serve our purpose well.
 
 First update the upstream-master branch from the Unity repo :
 
