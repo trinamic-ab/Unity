@@ -1,12 +1,12 @@
 # Unity
 
-This is branch containing only the source of Unity.
+This is branch containing only the source of Unity as it is the only files that need including in a project to use it. I didn't want a full submodule in my project, or to have to resort to copy-pasting.
+
 This is maintained using the subtree git command, that way Unity can be included using submodules from this fork.
 
 ## How to use this fork
 
 Simply include it as a submodule into a project:
-
 ```
 git submodule add https://github.com/trinamic-ab/Unity.git test/
 ```
@@ -20,6 +20,12 @@ Otherwise the following command will init and update all submodules :
 
 ```
 git submodule update --init --recursive
+```
+
+The following command will only update :
+
+```
+git submodule update --remote
 ```
 
 ## How to update this repo
