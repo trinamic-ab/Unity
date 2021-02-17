@@ -8,7 +8,7 @@ This is maintained using the subtree git command, that way Unity can be included
 
 Simply include it as a submodule into a project:
 ```
-git submodule add https://github.com/trinamic-ab/Unity.git test/
+git submodule add https://github.com/trinamic-ab/Unity.git tests/Unity
 ```
 When cloning the project that includes this submodule be sure to use the following command :
 
